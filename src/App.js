@@ -12,25 +12,26 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from "react-router-dom";
+
 
 const App = () => (
     <div className="App">
         <Router>
             <Navbar/>
-
-            <Switch>
-            <Route exact path="/">
-                <Home/>
-            </Route>
-            <Route path="/about">
-                <About/>
-            </Route>
-            <Route path="/facts">
-                <Facts/>
-            </Route>
-        </Switch>
+            <div className='app-body'>
+                <Switch>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>
+                    <Route path="/about">
+                        <About/>
+                    </Route>
+                    <Route path="/facts">
+                        <Facts/>
+                    </Route>
+                </Switch>
+            </div>
         </Router>
     </div>
 );

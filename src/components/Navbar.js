@@ -9,14 +9,13 @@ const NavbarItems = [
     ["/facts", "facts"]
 ];
 
-
 const Navbar = () => (
     <nav className='nav'>
-    {
-        NavbarItems.map((item) => {
-         return (<Link to={item[0]}>{item[1]}</Link>)
-       })
-    }
+        {
+            NavbarItems.map((item) => {
+                return (<Link to={item[0]}>{item[1]}</Link>)
+            })
+        }
     </nav>
 )
 
